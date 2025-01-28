@@ -1,0 +1,433 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'hobo';
+    src: url('../font/HoboStd.otf');
+}
+ 
+
+:root{ 
+    --font-mont:  "Montserrat", sans-serif;
+    --font-rock:  "RocknRoll One", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.mirror_image{
+    transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -moz-transform: scaleX(-1);
+    -ms-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+}
+
+.montserrat_font{
+    font-family: var(--font-mont);
+}
+
+.rock_font{
+    font-family: var(--font-rock);
+}
+
+body{  
+    font-family: "Jua", sans-serif;
+}
+   
+.flex_center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero_text_shdow{
+    text-shadow: 2.2px 2.2px 0px #000000;
+    -webkit-text-stroke: 2px black;
+}
+
+.box_shdow{
+    box-shadow: -2px 2px 0px 0px #000000;
+}
+
+.nav_shadow{
+    box-shadow: -2px 2px 0px 0px #000000;
+}
+
+.nav_container::before,
+.nav_container::after{
+    content: "";
+    position: absolute; 
+
+    height: 50px;
+    width: 50px;  
+
+
+    background-image: url('../images/clip_nav.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+} 
+
+
+.nav_container::before{
+    left: -30px;
+}
+ 
+.nav_container::after{
+    right: -30px;
+}
+
+.text_nav{
+    transition: .2s ease-out;
+    -webkit-transition: .2s ease-out;
+    -moz-transition: .2s ease-out;
+    -ms-transition: .2s ease-out;
+    -o-transition: .2s ease-out;
+}
+ 
+.text_nav:hover{
+    color: #ffffff;
+}
+
+/* menu button */
+.menu-button {
+    display: none;
+    overflow: hidden;
+
+    height: 35px;
+    width: 45px;
+
+    position: relative; 
+
+    align-items: center;
+}
+
+.menu-button span {
+        width: 100%;
+        height: 3px;
+        background-color: rgb(0, 0, 0);
+        position: absolute;
+        transition: all .3s ease-in-out;
+    }
+
+    .menu-button span:nth-child(1) {
+        top: 0;
+    }
+
+    .menu-button span:nth-child(2) {
+        position: relative;
+    }
+
+    .menu-button span:nth-child(3) {
+        bottom: 0;
+    }
+
+    .menu-button.active span:nth-child(1) {
+        transform: rotate(45deg);
+        top: 1rem;
+    }
+
+    .menu-button.active span:nth-child(2) {
+        width: 0%;
+    }
+
+    .menu-button.active span:nth-child(3) {
+        transform: rotate(-45deg);
+        bottom: 1rem;
+    }
+
+/* hero */ 
+.hero::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 130%;
+    background-image: url('../images/hero_bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: water 30s infinite linear;
+    -webkit-animation: water 30s infinite linear;
+}
+
+/* about */
+#tokenomics::before,
+footer::before,
+.about::before{
+    content: "";
+    position: absolute;
+
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    background-image: url('../images/about_texture.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.about_text_shdow{
+    text-shadow: .35vw .35vw 0px #000000;
+    -webkit-text-stroke: .2vw black;
+}
+
+
+
+/* tokenomics */ 
+/* ca */
+.buy{
+    box-shadow: 2.37px 2.37px 0px 0px #000000;
+}
+
+.token_image{
+    background: linear-gradient(356.21deg, #FFD93C -3.51%, rgba(115, 115, 115, 0) 104.26%);
+}
+
+/* roadmap */
+.roadmap::before{
+    content: "";
+    position: absolute;
+
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /* opacity: 0.5; */
+    background-image: url('../images/bone1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    mix-blend-mode: overlay;
+	z-index:1;
+	-webkit-animation: leaf 10s linear infinite;
+	-moz-animation: leaf 10s linear infinite;
+	-ms-animation: leaf 10s linear infinite;
+	animation: leaf 10s linear infinite;
+}
+@keyframes leaf {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  100% {background-position: 500px 1000px, 400px 400px, -300px 600px;}
+}
+
+.roadmap_text_shdow{
+    text-shadow: .2vw .2vw 0px #000000;
+    -webkit-text-stroke: .2vw black;
+}
+
+.phase_text_shdow{
+    -webkit-text-stroke: .7px #ECC93A; 
+    color: black;
+}
+
+.phase{
+    background-color: #ffffff;
+    border: 3px solid black;
+    box-shadow: 6px 6px 0px 0px #FF89C5;
+}
+
+
+.radius_gradient{
+    box-shadow: 0px 4px 10vw 25vw #f8eabaee;
+}
+
+/* animation */
+.float_animation{
+    animation: float 8s ease-in-out infinite;
+    -webkit-animation: float 8s ease-in-out infinite;
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% { 
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+.water{
+    animation: water 8s ease-in-out infinite;
+    -webkit-animation: water 8s ease-in-out infinite;
+}
+
+@keyframes water {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-10%);
+		-webkit-transform: translatey(-10%);
+		-moz-transform: translatey(-10%);
+		-ms-transform: translatey(-10%);
+		-o-transform: translatey(-10%);
+}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+
+.rotate_animation{
+    animation: rotate 10s linear infinite;
+  }
+  
+  @keyframes rotate {
+  0%{
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+  } 
+  }
+
+.cloud_animation{
+    animation: cloud 35s ease-in-out infinite; 
+}
+
+.cloud_animation_reverse{
+    animation: cloud_reverse 35s ease-in-out infinite;
+}
+
+@keyframes cloud {
+	0%,100% {
+		transform: translateX(0px);
+	}
+	50% { 
+		transform: translateX(-100px);
+	} 
+}
+
+@keyframes cloud_reverse {
+	0%,100% {
+		transform: translateX(0px);
+	}
+	50% { 
+		transform: translateX(100px);
+	} 
+}
+ 
+.token_animation{
+    transform-origin: 50% 0px;
+    animation: token_animation 3s infinite cubic-bezier(0.5,300,0.5,-300);
+}
+
+@keyframes token_animation { 
+    100% { transform: rotate(0.05deg); -webkit-transform: rotate(0.05deg); -moz-transform: rotate(0.05deg); -ms-transform: rotate(0.05deg); -o-transform: rotate(0.05deg); }
+}
+
+.zoom_in{
+    animation: zoom_in 10s infinite linear;
+    -webkit-animation: zoom_in 10s infinite linear;
+}
+
+@keyframes zoom_in {
+    0%,100%{
+      transform: scale(1);
+      -webkit-transform: scale(1);
+      -moz-transform: scale(1);
+      -ms-transform: scale(1);
+      -o-transform: scale(1);
+    }
+    50%{
+      transform: scale(1.5);
+      -webkit-transform: scale(1.5);
+      -moz-transform: scale(1.5);
+      -ms-transform: scale(1.5);
+      -o-transform: scale(1.5);
+  }
+  }
+
+  
+.doogle_animation{
+    animation: doogle_animation 10s linear infinite;
+    -webkit-animation: doogle_animation 10s linear infinite;
+}
+  
+  @keyframes doogle_animation {
+  0%,100%{
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    }
+    30% {
+    transform: translateX(10%);
+    -webkit-transform: translateX(10%);
+    -moz-transform: translateX(10%);
+    -ms-transform: translateX(10%);
+    -o-transform: translateX(10%);
+    }
+    60%{
+        transform: translateX(-10%);
+        -webkit-transform: translateX(-10%);
+        -moz-transform: translateX(-10%);
+        -ms-transform: translateX(-10%);
+        -o-transform: translateX(-10%);
+} 
+  }
+
+/* media queries */
+@media screen and (min-width:1025px){
+    .menu_drop{
+        display: none;
+        opacity: 0;
+        z-index: -111;
+        right: -200%;
+    }
+}
+
+@media screen and (max-width:1024px){
+    .menu-button{
+        display: flex;
+        position: absolute;
+        right: 0; 
+    }
+
+}
+
+@media screen and (max-width:500px) { 
+    .menu-button {
+        width: 27px;
+        height: 23px;
+    }
+
+    .menu-button.active span:nth-child(1){
+           top: .6rem; 
+    }
+
+    .menu-button.active span:nth-child(3){
+                bottom: .7rem;
+    }
+    
+    .marquee span{ 
+        font-size: 34px; 
+    } 
+
+    .cloud_animation{
+        animation: cloud 49s ease-in-out infinite; 
+    }
+    
+    .cloud_animation_reverse{
+        animation: cloud_reverse 49s ease-in-out infinite;
+    }
+} 
+
+

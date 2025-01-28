@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="Dope_logo.png">
+
+    <!-- aos animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <!-- tailwind css cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- css link -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>DOGE DEEP</title>
+</head>
+
+<body style="font-family: 'hobo';">
+
+    <div class="container_site max-w-[100%] relative w-full h-auto min-h-[100vh] overflow-hidden">
+
+        <!-- navbar -->
+        <nav
+            class="w-full z-[999]  justify-center h-[100px] xl:h-[120px] relative left-0 top-0 max-w-[100%] bg-[#05A3D4] flex items-center px-[2rem] xl:px-[5rem] ">
+
+            <div
+                class="nav_container px-[1rem] md:px-[2rem] bg-[#33E4FF] flex items-center relative h-[70%] justify-between w-full max-w-[100%] xl:max-w-[1500px] border-black border-[2px] nav_shadow rounded-lg md:rounded-[30px] max-lg:px-6">
+
+                <div class="left flex relative z-10 justify-center items-center   text_nav text-[15px] md:text-[30px]">
+
+                    <div class="logo  flex_center gap-2 md:gap-4">
+                        <span
+                            class="w-[40px] md:w-[60px] h-[40px] md:h-[60px] rounded-full border-black border-[2px] flex_center overflow-hidden">
+                            <img  src="Dope_logo.png" alt="" class="w-[130px] h-auto object-cover">
+                        </span>
+                  
+
+                    </div>
+
+                </div>
+
+
+                <div
+                    class="center absolute left-[50%] translate-x-[-50%]  top-0 h-full w-[100%] z-0  justify-center flex items-center ">
+
+                    <ul class="flex items-center absolute opacity-0 xl:opacity-100 xl:relative gap-[1rem] link_none">
+
+                        <li class="list-none">
+                            <a href="index.html#About" class="text_nav text-[18px]">
+                                About</a>
+                        </li>
+
+                        <li class="list-none">
+                            <a href="index.html#tokenomics" class="text_nav text-[18px]">
+                                Tokenomics</a>
+                        </li>
+
+                        <li class="list-none">
+                            <a href="https://t.me/DogeDeep" class="text_nav text-[18px]">
+                                Telegram</a>
+                        </li>
+                        <li class="list-none">
+                            <a href="https://x.com/dogedeepsolana" class="text_nav text-[18px]">
+                                Twitter</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <div class="right relative z-10 md:w-auto flex justify-center h-full items-center gap-[1rem] ">
+
+                    <a target="_blank" href="https://t.me/DogeDeep"
+                        class="h-[50px] w-[50px]  bg-[#fff] rounded-[10px] md:rounded-[10px] text-[10px] xl:text-[18px] justify-center items-center btn_hover border-[#000] border-[1px] hover:scale-110 duration-300 box_shdow hidden lg:flex">
+                        <img src="assets/images/telegram.svg" alt="" class="w-[50%] h-auto object-contain">
+                    </a>
+
+                    <a target="_blank" href="https://x.com/dogedeepsolana"
+                        class="h-[50px] w-[50px]  bg-[#fff] rounded-[10px] md:rounded-[10px] text-[10px] xl:text-[18px] justify-center items-center btn_hover border-[#000] border-[1px] hover:scale-110 duration-300 box_shdow hidden lg:flex">
+                        <img src="assets/images/twitter.svg" alt="" class="w-[50%] h-auto object-contain">
+                    </a>
+                    <a target="_blank" href="hhttps://www.dextools.io/app/en/ether/pair-explorer/0xa839613da0d6c13d8d47acc27427f33de10e858f?t=1723752567748"
+                    class="h-[50px] w-[50px]  bg-[#fff] rounded-[10px] md:rounded-[10px] text-[10px] xl:text-[18px] justify-center items-center btn_hover border-[#000] border-[1px] hover:scale-110 duration-300 box_shdow hidden lg:flex">
+                    <img src="assets/images/dex_about2.png" alt="" class="w-[100%] h-auto object-contain">
+                </a>
+
+                    <a href=""
+                        class="w-[70px] h-[33px] md:w-[145px] uppercase md:h-[53px]   bg-[#FFD93C] rounded-[10px] md:rounded-[10px] text-[10px] xl:text-[18px] flex justify-center items-center btn_hover border-[#000] border-[1px] hover:scale-110 duration-300 box_shdow">
+                        buy
+                    </a>
+
+                    <div class="menu-button relative">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+            <!-- menu -->
+            <div
+                class="menu menu_drop nav_shadow absolute hidden top-[110%] right-[3rem] w-[190px] flex justify-center border-black border-[2px] rounded-[12px] bg-[#33E4FF] h-auto py-4">
+
+                <ul class="flex items-center  relative gap-[2rem] link_none flex-col justify-center">
+
+                    <li class="list-none"><a href="index.html#about"
+                            class="text_nav text-[19px] md:text-[30px]">About</a>
+                    </li>
+                    <li class="list-none"><a href="index.html#tokenomics"
+                            class="text_nav text-[19px] md:text-[30px]">Tokenomics</a>
+                    </li>
+                    <li class="list-none"><a href="https://t.me/DogeDeep" class="text_nav text-[19px] md:text-[30px]">Telegram</a>
+                    </li>
+                    <li class="list-none"><a href="https://x.com/dogedeepsolana" class="text_nav text-[19px] md:text-[30px]">Twitter</a>
+                    </li>
+                    <li class="flex justify-center w-full gap-4">
+                        <a target="_blank" href="https://t.me/DogeDeep"
+                            class="h-[50px] w-[50px]  bg-[#fff] rounded-[10px] md:rounded-[10px] text-[10px] xl:text-[18px] justify-center items-center btn_hover border-[#000] border-[1px] hover:scale-110 duration-300 box_shdow flex">
+                            <img src="assets/images/telegram.svg" alt="" class="w-[50%] h-auto object-contain">
+                        </a>
+
+                        <a target="_blank" href="https://x.com/dogedeepsolana"
+                            class="h-[50px] w-[50px]  bg-[#fff] rounded-[10px] md:rounded-[10px] text-[10px] xl:text-[18px] justify-center items-center btn_hover border-[#000] border-[1px] hover:scale-110 duration-300 box_shdow flex">
+                            <img src="assets/images/twitter.svg" alt="" class="w-[50%] h-auto object-contain">
+                        </a>
+
+                        <a target="_blank" href=""
+                            class="h-[50px] w-[50px]  bg-[#fff] rounded-[10px] md:rounded-[10px] text-[10px] xl:text-[18px] justify-center items-center btn_hover border-[#000] border-[1px] hover:scale-110 duration-300 box_shdow flex">
+                            <img src="assets/images/dex_about2.png" alt="" class="w-[100%] h-auto object-contain">
+                        </a>
+                    </li>
+
+
+                </ul>
+
+            </div>
+
+        </nav>
+
+        <!-- hero -->
+        <section
+            class="hero  w-full relative flex_center h-auto xl:h-[650px] min-[1600px]:h-[760px] min-[2000px]:h-[50vw] max-lg:flex-col max-lg:py-[20vw]">
+
+            <div class="w-full lg:w-[50%] relative flex justify-center lg:justify-end z-10">
+                <div class="w-auto flex_center flex-col">
+                    <div class="relative rotate-[-10deg]">
+                        <h1
+                            class="text-[#FFD93C] hero_text_shdow text-[9vw] lg:text-[40px] xl:text-[60px] min-[1600px]:text-[99.75px]">
+                            DOGE DEEP</h1>
+                    </div>
+                    <div
+                        class="w-[90vw] lg:w-[400px] xl:w-[500px] min-[1600px]:w-[700px] h-auto flex_center rotate-[-10deg]">
+
+                        <img src="assets/images/doogle/d.png" alt=""
+                            class="w-[20%] h-auto object-contain float_animation" style="animation-delay: -3.5s;">
+                        <img src="assets/images/doogle/o.png" alt=""
+                            class="w-[20%] h-auto object-contain float_animation" style="animation-delay: -4.5s;">
+                        <img src="assets/images/doogle/p.png" alt=""
+                            class="w-[20%] h-auto object-contain float_animation" style="animation-delay: -5.5s;">
+                            <img src="assets/images/doogle/e.png" alt=""
+                            class="w-[20%] h-auto object-contain float_animation" style="animation-delay: -5.5s;">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full lg:w-[40%] lg:h-full relative flex justify-center lg:justify-start items-center z-[9]">
+                <div class="w-[70%]  ">
+                    <img src="/deepDoge_hero.gif" alt="hero doogle"
+                        class="w-full h-auto object-contain doogle_animation">
+                </div>
+            </div>
+
+        </section>
+
+        <!-- about -->
+        <section id="about"
+            class="about  relative w-full flex_center bg-[#00DCFC] h-auto lg:h-[600px] min-[1600px]:h-[800px] mt-[5vw] ">
+
+            <!-- lines -->
+            <div class="w-full h-auto absolute top-[-40vw] flex_center">
+                <img src="assets/images/line_about.svg" alt=""
+                    class="w-auto h-[62vw] min-w-[100%] object-cover rotate-[16deg] ">
+            </div>
+
+            <!-- content -->
+            <div
+                class="w-full  flex_center relative h-auto lg:h-full max-lg:flex-col max-lg:gap-[4rem] max-lg:py-[3rem]">
+
+                <div class="w-full lg:w-[50%] flex_center h-full">
+
+                    <div class="img_about flex max-lg:justify-center rotate-[-14deg]">
+
+                        <img src="Dope_logo.png" alt=""
+                            class="w-[340px] max-w-[90%] lg:w-[500px] min-[1600px]:w-[650px] h-auto object-contain mt-[-30px] z-[1]">
+
+                        <div
+                            class="social absolute bg-[#DEEE47] w-[78%] xl:w-[280px] h-[80px] bottom-[14px] lg:bottom-[23px] right-[48px] lg:right-[88px] xl:right-[97px] min-[1600px]:right-[127px] min-[1600px]:bottom-[29px] rounded-tl-[10px] rounded-br-[14px] flex_center gap-4 z-10">
+
+                            <a href="https://t.me/DogeDeep" target="_blank" class="relative duration-300 hover:scale-105">
+                                <img src="assets/images/telegram_about.png" alt=""
+                                    class="w-[37px] lg:w-[55px] h-auto object-contain">
+                            </a>
+                            <a href="https://x.com/dogedeepsolana" target="_blank" class="relative duration-300 hover:scale-105">
+                                <img src="assets/images/twitter_about.png" alt=""
+                                    class="w-[37px] lg:w-[55px] h-auto object-contain">
+                            </a>
+                            <a href="https://www.dextools.io/" target="_blank"
+                                class="relative duration-300 hover:scale-105">
+                                <img src="assets/images/dex_about.png" alt=""
+                                    class="w-[37px] lg:w-[55px] h-auto object-contain">
+                            </a>
+
+
+                        </div>
+
+                        <img src="assets/images/shadow.svg" alt=""
+                            class="absolute left-[-20px] bottom-[-20px] w-[100px] h-auto  ">
+
+                    </div>
+
+                </div>
+
+
+                <div class="w-[90%] lg:w-[50%] flex max-lg:items-center flex-col">
+
+                    <h1
+                        class="about_text rotate-[4deg] about_text_shdow text-[#FFD93C] leading-[1] text-[14vw] lg:text-[100px] min-[1600px]:text-[130px]">
+                        About <br>
+                        $DOG
+                    </h1>
+
+                    <p class="xl:w-[600px] my-[2rem] lg:text-[19px] min-[1600px]:text-[24px]">
+                        The most simple meme, 'Dog' is here to cement its place in the ERC space for the ages, 
+                        whether you're a OG Doge, Shiba holder or a new Neiro whale, we all love mans best friend. 
+                        Now through pure simplicity he has his own path to lead. Only the most loyal of the pack will get their treats. 
+                        Put those paws to work and come meme in the most smooth brained way possible, pure simplicity.
+                    </p>
+
+                    <div class="relative">
+
+                        <a href=""
+                            class="w-[140px] h-[53px] md:w-[230px] uppercase md:h-[73px]   bg-[#FFD93C] rounded-[10px] md:rounded-[10px] text-[14px] xl:text-[18px] flex justify-center items-center  border-[#000] border-[1px]   rotate-[-6deg] duration-200 hover:rotate-0 box_shdow gap-6 ">
+
+                            <span
+                                class="w-[40px] md:w-[40px] h-[40px] md:h-[40px] rounded-full border-black border-[2px] flex_center overflow-hidden">
+                                <img src="Dope_logo.png" alt="" class="w-[130px] h-auto object-cover">
+                            </span>
+                            buy now
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="tokenomics" class="token bg-[#FFD93C] w-full h-auto relative flex items-center lg:h-[700px] z-10">
+
+            <!-- lines -->
+            <div class="w-full h-auto absolute top-[-1.5vw] flex_center">
+                <img src="assets/images/lines_token.svg" alt="" class="w-auto h-[6vw] min-w-[100%] object-cover  ">
+            </div>
+
+            <!-- background -->
+            <div
+                class="bg-image imagehome w-full h-full absolute left-[50%] translate-x-[-50%] top-0 flex justify-center items-center z-[0] max-w-[1900px]">
+
+
+                <!-- rotate image -->
+                <div
+                    class="absolute w-[100vw] md:w-[1000px] h-[100vw] md:h-[1000px] object-contain z-10 top-[50%] xl:top-0 xl:right-[-10%] min-[2000px]:right-[-5%]">
+                    <img src="assets/images/rotate_img.svg" alt="" class="absolute  w-full h-full rotate_animation">
+                </div>
+
+            </div>
+
+            <!-- content -->
+            <div
+                class="content pt-[100px] xl:pt-[0px] relative h-auto xl:h-full w-full max-w-[1800px] xl:px-[2rem] mx-auto flex justify-center lg:justify-between  items-center flex-col xl:flex-row text-white  max-lg:pb-[100px]">
+
+                <div class="w-full lg:w-[50%] flex_center flex-col">
+
+                    <div class="w-[400px]  lg:w-[500px]  lg:mr-[-70px] ">
+                        <img src="assets/images/token_title.png" alt=""
+                            class="w-full h-auto object-contain max-lg:rotate-[-7deg]">
+                    </div>
+
+                    <div class="w-[370px]   lg:w-[500px] z-10 token_animation">
+                        <img src="assets/images/token_content.png" alt=""
+                            class="w-full h-auto object-contain ml-[-30px] lg:ml-[-5px] mt-[-70px] lg:mt-[-87px] ">
+                    </div>
+
+                </div>
+
+                <!-- image  -->
+                <div
+                    class="right relative xl:absolute bottom-0 right-0 w-full max-[1000px]:mt-[2rem] xl:w-[863px] flex justify-center mirror_image ">
+
+                    <span class="absolute w-full bottom-0 h-[50%] token_image left-0 z-10"></span>
+
+                    <img src="Dope_logo.png" alt="matt"
+                        class="max-w-[100%] w-[90%] md:w-[400px] xl:w-[600px]    relative  h-auto object-cover  float_animation">
+
+                </div>
+
+                <!-- buy ca -->
+                <div
+                    class=" w-[90%] md:w-[550px] absolute bottom-0   lg:right-[10%] h-[220px] bg-[#FFD93C] border-black border-[2px] rounded-t-xl flex_center flex-col px-[1.5rem] gap-4">
+
+                    <!-- contract -->
+                    <div class="bg-white w-full flex_center h-[70px] buy rounded-xl overflow-hidden relative">
+                        <div class="w-[15%] h-full flex_center bg-[#FECA08]">
+                            <h3 class="text-[19px] text-black">BUY</h3>
+                        </div>
+                        <div
+                            class="w-[70%] max-w-[70%] overflow-hidden h-full flex_center text-[14px] lg:text-[11px] text-[#504D4E]">
+                            <p class="font-bold">CA:</p>
+                            <span
+                                class="text-ellipsis max-lg:max-w-[70%] overflow-hidden copy-box__text copy-box__btn " style="font-size: 100%;">00000000000000000000000000</span>
+                        </div>
+                        <div class="w-[15%] h-full flex_center bg-[#C3431C] cursor-pointer copy-box">
+                            <img src="assets/images/copy.svg" alt="" class="w-[30%] object-contain">
+                        </div>
+                    </div>
+
+                    <!-- other -->
+                    <div class=" relative w-full flex_center h-auto text-[#000000] text-center gap-3">
+                        <div
+                            class="px-4 py-2 bg-white rounded-lg buy border-black cursor-pointer border-[1px] leading-[1] duration-200 hover:rotate-0 rotate-[-2deg]">
+                            <span>TOKEN <br>
+                                DOGE DEEP</span>
+                        </div>
+                        <div
+                            class="px-4 py-4 bg-white rounded-lg buy border-black cursor-pointer border-[1px] leading-[1] duration-200 hover:rotate-0 rotate-[2deg]">
+                            <span>
+                                 
+                                Ticker: $DOPE
+                            </span>
+                        </div>
+                        <div
+                            class="px-6 py-4 bg-white rounded-lg buy border-black cursor-pointer border-[1px] leading-[1]  duration-200 hover:rotate-0 rotate-[-3deg]">
+                            <span>LP BURNT</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+       
+
+        <!-- footer -->
+        <footer class="w-full flex flex-col items-center bg-[#FFD93C] relative z-30 ">
+
+            <div class="w-full flex_center flex-col text-center gap-4 py-[40px]">
+
+                <div class="logo  flex_center gap-2 md:gap-4">
+                    <span
+                        class="w-[40px] md:w-[60px] h-[40px] md:h-[60px] lg:h-[70px] lg:w-[70px] rounded-full border-black border-[2px] flex_center overflow-hidden">
+                        <img src="/deepDoge_hero.gif" alt="" class="w-[130px] h-auto object-cover">
+                    </span>
+                    <h2 class="text-[30px] lg:text-[60px]">$DOPE</h2>
+                </div>
+
+                <p
+                    class="opacity-80 w-[90%] lg:w-[600px] lg:text-[20px] min-[1600px]:text-[32px] min-[1600px]:w-[800px]">
+                    Join the official $DOPE Token. </p>
+
+                <div class="social w-full flex_center gap-4">
+
+                    <a href="https://t.me/DogeDeep" target="_blank" class="relative duration-300 hover:scale-105">
+                        <img src="assets/images/telegram_about.png" alt=""
+                            class="w-[37px] lg:w-[47px] h-auto object-contain">
+                    </a>
+                    <a href="https://x.com/dogedeepsolana" target="_blank" class="relative duration-300 hover:scale-105">
+                        <img src="assets/images/twitter_about.png" alt=""
+                            class="w-[37px] lg:w-[47px] h-auto object-contain">
+                    </a>
+                    <a href="https://www.dextools.io/"
+                        target="_blank" class="relative duration-300 hover:scale-105">
+                        <img src="assets/images/dex_about.png" alt=""
+                            class="w-[37px] lg:w-[47px] h-auto object-contain">
+                    </a>
+
+
+                </div>
+
+
+            </div>
+
+            <div class="w-full h-[#2CC9FA] text-center text-[16px] lg:text-[20px] text-white py-3 bg-[#2CC9FA] z-10">
+                <p><span class="text-black">©</span>2025 $DOPE - All Rights Reserved </p>
+            </div>
+
+        </footer>
+
+    </div>
+
+    <!-- aos js scroll animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        // aos 
+        AOS.init({
+            once: true
+        });
+
+        // menu navbar
+        const menu = document.querySelector('.menu');
+        const menuBtn = document.querySelector('.menu-button');
+
+        menuBtn.addEventListener('click', () => {
+            menuBtn.classList.toggle('active')
+            menu.classList.toggle('hidden')
+        });
+
+        // copy address
+        const copyAddress = document.querySelector('.copy-box');
+        let text = document.querySelector('.copy-box__text');
+        let btn = document.querySelector('.copy-box__btn');
+        let btnText = btn.textContent;
+        let timeout;
+
+        copyAddress.addEventListener('click', () => {
+            navigator.clipboard.writeText(text.textContent).then(function () {
+                btn.textContent = 'Copied';
+
+                clearTimeout(timeout);
+                timeout = setTimeout(function () {
+                    btn.textContent = btnText;
+                }, 2000);
+            }).catch(function (err) {
+                console.error('Failed to copy text: ', err);
+            });
+
+        })
+    </script>
+</body>
+
+</html>
